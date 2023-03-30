@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrito de compras</title>
+
+</head>
+<body>
+<div class="container">
+    <h1>Carrito de compras</h1>
+    {{#products}}
+    <div class="row">
+
+
+            <h4>{{name}}</h4>
+            <p>Precio: {{price}} &#0128</p>
+            <form method="POST" action="/cart/deleted">
+                <input type="hidden" name="productId" value="{{id}}">
+                <button type="submit" class="btn btn-primary">Eliminar del carrito</button>
+            </form>
+
+    </div>
+    {{/products}}
+    {{^products}}
+    <p>No hay productos en el carrito.</p>
+    {{/products}}
+</div>
+</body>
+</html>
