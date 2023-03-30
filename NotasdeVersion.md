@@ -1,0 +1,3 @@
+-Creada funcionalidad para crear nuevos productos (Solo para admins).
+-Creada funcionalidad para añadir o eliminar productos del carrito.
+-Creada funcionalidad para ver los productos del carrito.
