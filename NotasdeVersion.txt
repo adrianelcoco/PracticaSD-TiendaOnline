@@ -1,0 +1,6 @@
+-Añadida entidad Stock
+-Añadida funcionalidad para crear un producto
+-Añadida funcionalidad para modificar un producto
+-Añadida funcionalidad para eliminar un producto
+-Añadida funcionalidad para incrementar o reducir el stock de un producto
+-Añadidos botones para volver a la pagina anterior
