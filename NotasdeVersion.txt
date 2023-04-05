@@ -1,0 +1,4 @@
+-Añadida entidad Order
+-Añadida funcionalidad de realizar pedido
+-Añadida funcionalidad de ver todos los pedidos
+-Añadida funcionalidad de ver detalle de cada pedido
