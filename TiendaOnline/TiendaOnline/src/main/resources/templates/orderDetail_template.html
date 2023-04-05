@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalles de pedido</title>
+</head>
+<body>
+    <h1>Detalles del pedido: {{order.id}}</h1>
+    {{#products}}
+    <div class="row">
+        <h4>Producto: {{name}}</h4>
+        <p>Precio: {{price}} &#0128</p>
+
+    </div>
+    {{/products}}
+    <p>Nombre del comprador: {{order.name}}</p>
+    <p>Direccion de entrega: {{order.street}}</p>
+    <p>Precio: {{order.totalPrice}} &#0128</p>
+    <p>Metodo de pago: {{order.payMethod}}</p>
+
+    <form method="GET" action="/orders">
+        <button type="submit" class="btn btn-primary">Volver</button>
+    </form>
+</body>
+</html>

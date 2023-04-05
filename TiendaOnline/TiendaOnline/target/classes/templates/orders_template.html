@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedidos</title>
+</head>
+<body>
+    <h1>Historial de Pedidos</h1>
+    {{#orders}}
+    <div class="row">
+        <h4>Nombre del comprador: {{name}}</h4>
+        <p>Direccion de entrega: {{street}}</p>
+        <p>Precio: {{totalPrice}} &#0128</p>
+        <p>Metodo de pago: {{payMethod}}</p>
+        <form method="GET" action="/orders/detail">
+            <input type="hidden" name="orderId" value="{{id}}">
+            <button type="submit" class="btn btn-primary">Ver detalles de pedido</button>
+        </form>
+    </div>
+    {{/orders}}
+    {{^orders}}
+    <p>No hay pedidos realizados.</p>
+    {{/orders}}
+    <form method="GET" action="/">
+        <button type="submit" class="btn btn-primary">Volver</button>
+    </form>
+</body>
+</html>

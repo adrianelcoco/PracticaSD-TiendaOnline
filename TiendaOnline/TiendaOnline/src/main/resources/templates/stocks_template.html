@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stocks</title>
+</head>
+<body>
+<div class="container">
+    <h1>Stocks de productos</h1>
+    {{#stocks}}
+    <div class="row">
+
+
+        <h4>{{product.name}}</h4>
+        <form method="POST" action="/stocks/modificar">
+            <p>Stock: {{amount}} Cantidad a aumentar/reducir: <input type="Text" name="newStock"/></p>
+            <input type="hidden" name="productId" value="{{product.id}}">
+            <button type="submit" name="increaseButton" class="btn btn-primary">Aumentar Stock</button>
+            <button type="submit" name="reduceButton" class="btn btn-primary">Reducir Stock</button>
+        </form>
+    </div>
+    {{/stocks}}
+    {{^stocks}}
+    <p>No hay productos en el carrito.</p>
+    {{/stocks}}
+</div>
+
+<form method="GET" action="/">
+    <button type="submit" class="btn btn-primary">Volver</button>
+</form>
+</body>
+</html>

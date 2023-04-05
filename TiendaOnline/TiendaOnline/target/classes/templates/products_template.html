@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Productos disponibles</title>
+
+</head>
+<body>
+<div class="container">
+    <h1>Productos disponibles</h1>
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#products}}
+        <tr>
+            <td>{{name}}</td>
+            <td>{{price}} &#0128</td>
+            <td>
+                <form method="POST" action="/added">
+                    <input type="hidden" name="productId" value="{{id}}">
+                    <button type="submit" class="button">Agregar al carrito</button>
+                </form>
+                <form method="POST" action="/modify">
+                    <input type="hidden" name="productId" value="{{id}}">
+                    <button type="submit" class="btn btn-primary">Modificar producto</button>
+                </form>
+                <form method="POST" action="/delete">
+                    <input type="hidden" name="productId" value="{{id}}">
+                    <button type="submit" class="btn btn-primary">Eliminar producto</button>
+                </form>
+            </td>
+        </tr>
+        {{/products}}
+        </tbody>
+    </table>
+    <form method="GET" action="/createproduct">
+        <button type="submit" class="button">Crear Producto</button>
+    </form>
+    <form method="GET" action="/stocks">
+        <button type="submit" class="button">Stocks</button>
+    </form>
+    <form method="GET" action="/cart">
+        <button type="submit" class="button">Carrito</button>
+    </form>
+    <form method="GET" action="/orders">
+        <button type="submit" class="button">Historial de Pedidos</button>
+    </form>
+
+</div>
+</body>
+</html>

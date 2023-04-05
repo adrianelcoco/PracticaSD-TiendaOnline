@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modificar producto</title>
+</head>
+<body>
+<form method="POST" action="/aply">
+  <input type="hidden" name="productId" value="{{product.id}}">
+  <p>
+    Nuevo nombre del producto: <input type="Text" name="name"/>
+  </p>
+  <p>
+    Nuevo precio del producto: <input type="Text" name="price"/>
+  </p>
+  <p>
+    <button type="submit" class="button">Aplicar</button>
+  </p>
+
+</form>
+
+<form method="GET" action="/">
+  <button type="submit" class="btn btn-primary">Volver</button>
+</form>
+</body>
+</html>
