@@ -1,1 +1,1 @@
-https://api.postman.com/collections/26142764-8de2760f-986c-4bd2-9f39-bffeda623f3c?access_key=PMAT-01GXQQD0PK3EV22YF4SPBMC5P3
+https://www.postman.com/adrian-joaquin-368498/workspace/apirest-practica-sistemas-distribuidos-tienda-online/collection/26142764-8de2760f-986c-4bd2-9f39-bffeda623f3c?action=share&creator=26142764
