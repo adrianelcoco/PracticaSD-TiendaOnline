@@ -1,0 +1,62 @@
+.form-group .incorrectform{
+    border: 3px solid #bb2929;
+}
+
+.incorrectLabel{
+    color:#bb2929;
+}
+
+.btn-primary{
+    background-color: black;
+    border-color: antiquewhite;
+}
+
+.btn-green{
+    background-color:green;
+    border-color: black;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.btn-red{
+    background-color:crimson;
+    border-color: black;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+
+}
+
+.btn-orange{
+    background-color:orange;
+    border-color: black;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+
+}
+.btn-blue{
+    background-color:blue;
+    border-color: black;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+
+}
+
+
+
+
