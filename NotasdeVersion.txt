@@ -1,4 +1,2 @@
--Mejoras visuales con bootstrap
--Implementado JavaScript
--Añadidas funcionalidades ApiRest
 -Corregidos algunos errores menores
+-Añadida coleccion Postman
